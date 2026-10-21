@@ -1,18 +1,29 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# ═══════════════════════════════════════════════════════════════════════════════
+# NEXUS PERSONA INTELLIGENCE — .gitignore
+# ═══════════════════════════════════════════════════════════════════════════════
 
-# Other files and folders
-.settings/
+# --- Cache & Données locales (Généré à l'exécution) ---
+NexusUltimate/
+cache/
+logs/
+*.log
+*.tmp
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+venv/
+.venv/
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# --- Secrets & OS ---
+.env
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
